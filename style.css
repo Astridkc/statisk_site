@@ -46,4 +46,68 @@ a {
 h1 {
   text-align: center;
   margin-top: 5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+/*************produktlliste******************/
+.product_list_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1px;
+  grid-template-rows: repeat(5, auto);
+  position: relative;
+}
+
+.box {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: auto/span 4;
+  gap: 0.5rem;
+}
+.discount {
+  position: absolute;
+  bottom: 1%;
+  right: 53%;
+  background-color: crimson;
+  padding: 5px;
+}
+.sold_out {
+  filter: grayscale(100%);
+  position: relative;
+}
+.sold_out_text {
+  position: absolute;
+  top: 24%;
+  left: 57%;
+  color: crimson;
+  font-size: 30px;
+}
+.sold_out_2 {
+  filter: grayscale(100%);
+  position: relative;
+}
+.sold_out_text_2 {
+  position: absolute;
+  top: 24%;
+  left: 82%;
+  color: crimson;
+  font-size: 30px;
+}
+.discount_2 {
+  position: absolute;
+  background-color: crimson;
+  padding: 5px;
+  bottom: 1%;
+  right: 1%;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 200;
+}
+h3 {
+  font-weight: 200;
+  font-size: 15px;
 }
