@@ -111,3 +111,32 @@ h3 {
   font-weight: 200;
   font-size: 15px;
 }
+
+/*****************product***************/
+.product_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  grid-template-rows: repeat(9, auto);
+}
+.kurv {
+  background-color: lightgray;
+  padding: 1.5rem;
+}
+.product_box {
+  display: grid;
+
+  grid-row: auto/span 9;
+}
+.kurv {
+  display: grid;
+
+  grid-row: auto/span 9;
+  gap: 0.5rem;
+}
+.product_img {
+  display: grid;
+
+  grid-row: auto/span 9;
+  gap: 0.5rem;
+}
