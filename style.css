@@ -113,7 +113,7 @@ h3 {
 }
 
 /*****************product***************/
-.product_container {
+.productContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
