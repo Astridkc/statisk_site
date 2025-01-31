@@ -40,7 +40,7 @@ main {
   padding: 10px;
 }
 a {
-  text-decoration: none;
+  color: black;
 }
 
 h1 {
@@ -63,7 +63,7 @@ h1 {
 .box {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: auto/span 4;
+  grid-row: span 5;
   gap: 0.5rem;
 }
 .discount {
@@ -108,8 +108,8 @@ h2 {
   font-weight: 200;
 }
 h3 {
-  font-weight: 200;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 /*****************product***************/
