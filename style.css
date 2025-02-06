@@ -39,8 +39,13 @@ main {
   border: 2px solid black;
   padding: 10px;
 }
-a {
+.container a {
   color: black;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 2rem;
+  border: 2px solid black;
+  padding: 10px;
 }
 
 h1 {
@@ -67,7 +72,9 @@ h1 {
   top: 2%;
   background-color: crimson;
   padding: 5px;
+  visibility: hidden;
 }
+
 .sold_out {
   filter: grayscale(100%);
   position: relative;
@@ -78,6 +85,7 @@ h1 {
   left: 23%;
   color: crimson;
   font-size: 30px;
+  visibility: hidden;
 }
 
 h2 {
@@ -89,6 +97,11 @@ h3 {
 .box {
   border: 2px solid black;
   padding: 10px;
+}
+
+.foerpris {
+  text-decoration: line-through;
+  color: grey;
 }
 
 /*****************product***************/
@@ -119,7 +132,56 @@ h3 {
   grid-row: auto/span 9;
   gap: 0.5rem;
 }
+.product_img {
+  position: relative;
+}
+
+.discount_2 {
+  position: absolute;
+  top: 2%;
+  background-color: crimson;
+  padding: 5px;
+  visibility: hidden;
+}
+.sold_out_2 {
+  position: absolute;
+  top: 33%;
+  left: 23%;
+  color: crimson;
+  font-size: 30px;
+  visibility: hidden;
+}
+.size-selector {
+  margin-bottom: 1.5rem;
+}
+
+.size-label {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.size-select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.375rem;
+  background-color: white;
+  cursor: pointer;
+}
 
 .hide {
   display: none;
+}
+
+.tilbudHidden {
+  visibility: hidden;
+}
+.isOnSale {
+  visibility: visible;
+}
+.isSoldOut {
+  visibility: visible;
 }
